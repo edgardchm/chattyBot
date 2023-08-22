@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title class="custom-font">
+      ChattyBot
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="backgrounds">
+  <ion-list lines="none">
+    <ion-item class="item" *ngFor="let message of messages" [class]="message.sender">
+      <div class="message-text">{{ message.text }}</div>
+    </ion-item>
+  </ion-list>
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar class="inputs">
+    <ion-input [(ngModel)]="newMessage" placeholder="  Escribe un mensaje"></ion-input>
+    <ion-button expand="full" shape="round" (click)="sendMessage()">Enviar &nbsp;<ion-icon name="send"></ion-icon></ion-button>
+  </ion-toolbar>
+</ion-footer>

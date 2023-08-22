@@ -1,0 +1,61 @@
+@font-face {
+    font-family: 'Pattanakarn';
+    src: url('../../assets/fonts/FontsFree-Net-Pattanakarn-Regular.ttf') format('truetype');
+  }
+
+
+ion-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80vh; /* Ajusta la altura del chat como desees */
+    overflow-y: scroll;
+    background-image: radial-gradient(circle at 50% -20.71%, #ffe5bc 0, #f9e7bc 6.25%, #f3e9bc 12.5%, #edebbd 18.75%, #e7ecbf 25%, #e0eec1 31.25%, #daefc5 37.5%, #d3f1c9 43.75%, #cdf2cd 50%, #c7f3d2 56.25%, #c1f4d7 62.5%, #bcf5dd 68.75%, #b7f5e2 75%, #b3f5e8 81.25%, #aff5ee 87.5%, #adf5f4 93.75%, #acf5f9 100%);  }
+  
+  ion-item {
+    max-width: 80%;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 12px;   
+    
+    &.user {
+      align-self: flex-end;
+      color: #228eaf; /* Color para los mensajes del usuario */
+      
+    }
+    &.chatbot {
+      align-self: flex-start;
+      color:  #17d446; /* Color para los mensajes del chatbot */
+      
+    }
+
+    .btn{
+      margin-left: 30px;
+    }
+  }
+  
+  
+  .message-text {
+    font-size: 1.2rem;
+    word-wrap: break-word;
+  }
+
+  ion-title.custom-font {
+    font-family: 'Pattanakarn', sans-serif; 
+    max-width: 100%;
+    max-height: 200px;
+    font-size: 24px;
+    text-align: center;
+    background-image: linear-gradient(180deg, #dcffb8 0, #c7ffba 16.67%, #b1ffba 33.33%, #9df2b9 50%, #8be4b7 66.67%, #7cd7b5 83.33%, #70ccb4 100%);
+  }
+  
+  
+  ion-footer {
+    ion-toolbar {
+      display: flex;
+      ion-input {
+        flex: 1;
+      }
+    }
+  }
+  
